@@ -7,15 +7,29 @@ body {
 	min-height: 10px;
 }
 
+.postcard-header h1 {
+	margin: 1px;
+}
+
 .postcard {
-	background: white;
+	background-color: white;
 	width: 400px;
 	height: 300px;
 	margin: auto;
 }
 
+.body-left p:first-child {
+	margin-top: none;
+}
+
+.postcard-body {
+	display: flex;
+}
+
 .postcard-header {
 	display: flex;
+	justify-content: space-between;
+	align-items: center;
 }
 
 .postcard-header img {
@@ -23,11 +37,22 @@ body {
 	height: 50px;
 }
 
-.postcard-header h1 {
-	width: 100px;
-	margin: 100px;
+.body-left,
+.body-right {
+	padding: 4px;
 }
 
-.postcard-body {
-	display: flex;
+input {
+	border: none;
+	border-bottom: 1px solid grey;
+	margin-top: 6px;
+}
+
+.postcard-footer {
+	text-align: center;
+}
+
+button {
+	background-color: darkgrey;
+	padding: 2px;
 }
